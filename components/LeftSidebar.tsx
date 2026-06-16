@@ -66,7 +66,7 @@ export default function LeftSidebar() {
       <div className="w-full space-y-3 mb-3 lg:mb-6">
         <div className="text-left space-y-1">
           <p className="text-xs text-zinc-500 uppercase tracking-widest font-light">Email</p>
-          <p className="text-[15px] text-white font-light">contact@bostamieducation.com</p>
+          <p className="text-[15px] text-white font-light flex items-center gap-1"> <Mail className="w-4 h-4 text-[#28e98c]" /> info@bayzidbostami.com</p>
         </div>
         <div className="text-left space-y-1">
           <p className="text-xs text-zinc-500 uppercase tracking-widest font-light">Base in</p>
@@ -79,7 +79,7 @@ export default function LeftSidebar() {
       {/* Copyright info */}
       <div className="text-zinc-500 text-[13px] font-light text-left w-full mb-3 lg:mb-6">
         <p>© 2026 Bayzid Bostami</p>
-        <p>Powered by <a href="https://rakibul.netlify.app/" target="_blank" className="text-[#28e98c]">Rakibul Hasan</a></p>
+        <p>Powered by <a href="https://rakibul.netlify.app/" target="_blank">Rakibul Hasan</a></p>
       </div>
 
       {/* Social Links */}
