@@ -10,41 +10,41 @@ interface TimelineItem {
 const experienceData: TimelineItem[] = [
   {
     period: "2022 - Present",
-    title: "Founder & Lead Educator",
+    title: "Founder & CEO, Lead Educator",
     institution: "Bostami Education",
     description:
-      "Created a leading online educational platform that simplifies complex mechanical engineering concepts. Published 100+ high-quality video tutorials, growing the subscriber base to 100k+ and mentoring students globally.",
+      "Created a leading online educational platform that simplifies complex concepts from high school to college level in the field of Science group including Physics, Chemistry, Mathematics, and more. Published 100+ high-quality video tutorials, growing the subscriber base to 10k+ and mentoring students globally.",
   },
   {
-    period: "2020 - 2022",
-    title: "Mechanical Design Engineer",
-    institution: "Industrial Automation Ltd",
+    period: "2022 - 2024",
+    title: "Assistant Teacher (Physics)",
+    institution: "SBSC School & College, Gazipur, Dhaka",
     description:
-      "Designed industrial mechanical components, HVAC layouts, and factory piping structures. Performed CAD modeling, structural analysis, and collaborated with fabrication teams to deploy automated systems.",
+      "Instructed 9th and 10th-grade physics classes, enhancing students' understanding of core scientific principles through engaging lessons.",
   },
   {
-    period: "2018 - 2020",
-    title: "Academic Consultant & Freelance Specialist",
-    institution: "Self-Employed",
+    period: "2021 - 2022",
+    title: "Sub Assistant Engineer (RAC)",
+    institution: "Minister High-Tech Park, Mymensingh",
     description:
-      "Provided expert consultation for engineering students in mechanical drafting, 3D printing prototypes, and computational fluid dynamics (CFD) simulation modeling.",
+      "Operated and maintained HVAC systems for the park's facilities. Ensured optimal performance and energy efficiency of cooling systems. Conducted regular maintenance and repair work to prevent downtime.",
   },
 ];
 
 const educationData: TimelineItem[] = [
   {
-    period: "2014 - 2018",
+    period: "2025 - 2028",
     title: "B.Sc. in Mechanical Engineering",
-    institution: "Bangladesh University of Engineering and Technology (BUET)",
+    institution: "International University of Business Agriculture and Technology (IUBAT)",
     description:
       "Graduated with honors. Developed strong foundations in Thermodynamics, Fluid Mechanics, CAD/CAM, Heat Transfer, and Control Systems. Completed thesis on thermal performance analysis of heat sinks.",
   },
   {
-    period: "2019",
-    title: "Advanced CAD & Finite Element Analysis (FEA)",
-    institution: "Autodesk Authorized Training Center",
+    period: "2017 - 2021",
+    title: "Diploma in Refrigeration and Air Conditioning Technology",
+    institution: "Dhaka Polytechnic Institute",
     description:
-      "Earned certifications in SolidWorks simulation and Autodesk Fusion 360, focusing on static, dynamic, and thermal stress modeling.",
+      "The program covers a wide range of topics, including thermodynamics, fluid mechanics, heat transfer, and refrigeration and air conditioning systems. Graduates of the program are eligible to work as refrigeration and air conditioning technicians, as well as in other related fields.",
   },
 ];
 

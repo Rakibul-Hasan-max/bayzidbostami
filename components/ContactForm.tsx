@@ -34,14 +34,14 @@ export default function ContactForm() {
             <Phone className="w-5 h-5 text-[#28e98c]" />
           </div>
           <p className="text-xs uppercase tracking-widest text-zinc-500 font-light mb-1">Phone</p>
-          <p className="text-[15px] text-white font-light">+880 1XXXXXXXXX</p>
+          <p className="text-[15px] text-white font-light">+880 151871 7097</p>
         </div>
         <div className="bg-[#191919] border border-zinc-800 rounded-[16px] p-6 group hover:border-zinc-600 transition-all duration-300">
           <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-[#28e98c]/10 transition-all duration-300">
             <Mail className="w-5 h-5 text-[#28e98c]" />
           </div>
           <p className="text-xs uppercase tracking-widest text-zinc-500 font-light mb-1">Email</p>
-          <p className="text-[15px] text-white font-light">contact@bostamieducation.com</p>
+          <p className="text-[15px] text-white font-light">info@bayzidbostami.com</p>
         </div>
         <div className="bg-[#191919] border border-zinc-800 rounded-[16px] p-6 group hover:border-zinc-600 transition-all duration-300">
           <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-[#28e98c]/10 transition-all duration-300">
