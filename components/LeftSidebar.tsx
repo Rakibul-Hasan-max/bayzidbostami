@@ -41,12 +41,16 @@ export default function LeftSidebar() {
   return (
     <div className="relative w-full lg:w-[360px] lg:fixed lg:top-8 lg:bottom-8 lg:left-8 bg-[#191919] border border-zinc-800 rounded-[30px] p-8 flex flex-col lg:justify-between items-center text-center z-10 shrink-0">
       {/* Top Header */}
-      <div className="w-full flex justify-between items-center mb-6">
-        <h2 className="text-xl font-bold tracking-tight text-white flex items-center gap-1">
-          Bayzid<span className="w-2 h-2 rounded-full bg-[#28e98c] inline-block"></span>
-        </h2>
+      <div className="w-full mb-6">
+        <Image
+          src="/logo-bb.png"
+          alt="Bayzid Bostami Logo"
+          width={300}
+          height={50}
+          className="object-contain"
+        />
         <span className="text-xs font-light text-zinc-400 tracking-wide">
-          Mechanical Engineer
+          Mechanical Engineer & Educator
         </span>
       </div>
 
