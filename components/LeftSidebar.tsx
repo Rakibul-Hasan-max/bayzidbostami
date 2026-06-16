@@ -39,7 +39,7 @@ export default function LeftSidebar() {
   };
 
   return (
-    <div className="w-full lg:w-[360px] lg:fixed lg:top-8 lg:bottom-8 lg:left-8 bg-[#191919] border border-zinc-800 rounded-[30px] p-8 flex flex-col justify-between items-center text-center z-10">
+    <div className="relative w-full lg:w-[360px] lg:fixed lg:top-8 lg:bottom-8 lg:left-8 bg-[#191919] border border-zinc-800 rounded-[30px] p-8 flex flex-col lg:justify-between items-center text-center z-10 shrink-0">
       {/* Top Header */}
       <div className="w-full flex justify-between items-center mb-6">
         <h2 className="text-xl font-bold tracking-tight text-white flex items-center gap-1">
@@ -63,7 +63,7 @@ export default function LeftSidebar() {
       </div>
 
       {/* User Info */}
-      <div className="w-full space-y-4 mb-6">
+      <div className="w-full space-y-3 mb-3 lg:mb-6">
         <div className="text-left space-y-1">
           <p className="text-xs text-zinc-500 uppercase tracking-widest font-light">Email</p>
           <p className="text-[15px] text-white font-light">contact@bostamieducation.com</p>
@@ -77,13 +77,13 @@ export default function LeftSidebar() {
       </div>
 
       {/* Copyright info */}
-      <div className="text-zinc-500 text-[13px] font-light text-left w-full mb-6">
-        <p>© 2026 Bayzid Bostami.</p>
-        <p>All Rights Reserved</p>
+      <div className="text-zinc-500 text-[13px] font-light text-left w-full mb-3 lg:mb-6">
+        <p>© 2026 Bayzid Bostami</p>
+        <p>Powered by <a href="https://rakibul.netlify.app/" target="_blank" className="text-[#28e98c]">Rakibul Hasan</a></p>
       </div>
 
       {/* Social Links */}
-      <div className="flex justify-center gap-3 w-full mb-6">
+      <div className="flex justify-center gap-3 w-full mb-4 lg:mb-6">
         <a
           href="https://youtube.com/@bostamieducation"
           target="_blank"
