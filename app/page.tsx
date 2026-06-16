@@ -29,8 +29,8 @@ import {
 const skills = [
   { name: "SolidWorks / CAD", level: 92 },
   { name: "Thermodynamics", level: 88 },
-  { name: "Fluid Mechanics", level: 85 },
-  { name: "MATLAB / Simulation", level: 80 },
+  { name: "HVAC & Refrigeration", level: 85 },
+  { name: "Public Speaking", level: 90 },
   { name: "Content Creation", level: 95 },
   { name: "Video Editing", level: 78 },
 ];
@@ -65,17 +65,14 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg text-zinc-400 font-light mt-8 max-w-2xl leading-relaxed">
-            I simplify complex engineering concepts and share knowledge through
-            my YouTube channel — Bostami Education. Passionate about
-            thermodynamics, CAD, and empowering the next generation of
-            engineers.
+            I simplify complex academic, admission & engineering concepts through my YouTube channel — Bostami Education. I love sharing my knowledge with others and helping them achieve their goals.
           </p>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-8 mt-16">
             <div className="bg-[#191919] border border-zinc-800 rounded-[20px] px-8 py-7 group hover:border-zinc-600 transition-all duration-300">
               <h2 className="text-4xl md:text-5xl font-light text-[#28e98c]">
-                100K+
+                1000+
               </h2>
               <p className="text-sm text-zinc-400 font-light mt-2">
                 YouTube Subscribers
@@ -104,15 +101,13 @@ export default function HomePage() {
           </h2>
 
           <p className="text-[16px] text-zinc-400 font-light mt-8 max-w-3xl leading-[1.85]">
-            Since beginning my career as a Mechanical Engineer, I&apos;ve dedicated
-            myself to making engineering education accessible and engaging.
-            Through Bostami Education — my YouTube platform — I break down
-            complex topics like Thermodynamics, Fluid Mechanics, Heat Transfer,
-            and CAD Design into easy-to-understand visual lessons. With over 100K
-            subscribers and a rapidly growing community, my mission is to empower
-            students across Bangladesh and beyond to master engineering concepts
+            Since beginning my career as a Educator, I&apos;ve dedicated
+            myself to making education accessible and engaging.
+            Through Bostami Education, my YouTube platform, I break down
+            complex topics of Science, Academic, Admission and Engineering concepts in easy-to-understand visual lessons. With over 1000 YouTube subscribers and a rapidly growing community, my mission is to empower
+            students across Bangladesh and beyond to master the subjects
             with confidence. I&apos;m quietly confident, naturally curious, and
-            perpetually working on creating better educational content — one
+            perpetually working on creating better educational content, one
             video at a time.
           </p>
         </section>
