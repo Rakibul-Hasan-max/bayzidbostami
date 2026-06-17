@@ -33,13 +33,13 @@ export default function ThemeSettings() {
   return (
     <>
       {/* Floating Toggle Button */}
-      <div className="fixed top-6 right-6 lg:top-8 lg:left-8 lg:right-auto z-40">
+      <div className="fixed top-4 right-4 lg:top-8 lg:left-8 lg:right-auto z-40">
         <button
           onClick={() => setIsOpen(true)}
-          className="w-12 h-12 rounded-full bg-[#191919] border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-accent hover:border-accent transition-all duration-300 group"
+          className="w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-[#191919] border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-accent hover:border-accent transition-all duration-300 group shadow-lg"
           aria-label="Theme Settings"
         >
-          <Settings className="w-5 h-5 animate-[spin_4s_linear_infinite]" />
+          <Settings className="w-4 h-4 lg:w-5 lg:h-5 animate-[spin_4s_linear_infinite]" />
         </button>
       </div>
 
