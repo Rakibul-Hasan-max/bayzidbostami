@@ -54,21 +54,21 @@ export default function Timeline() {
       {/* Experience Column */}
       <div className="space-y-10">
         <h3 className="text-xl font-light tracking-wide text-white mb-6">
-          Work <span className="text-[#28e98c]">Experience</span>
+          Work <span className="text-accent">Experience</span>
         </h3>
         <div className="relative border-l border-zinc-800 pl-8 space-y-10 py-2">
           {experienceData.map((item, index) => (
             <div key={index} className="group relative">
               {/* Timeline Bullet */}
-              <div className="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-700 group-hover:bg-[#28e98c] group-hover:border-[#28e98c] transition-all duration-300" />
+              <div className="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-700 group-hover:bg-accent group-hover:border-accent transition-all duration-300" />
               
               {/* Year Badge */}
-              <span className="text-xs font-light text-zinc-500 group-hover:text-[#28e98c] transition-colors duration-300">
+              <span className="text-xs font-light text-zinc-500 group-hover:text-accent transition-colors duration-300">
                 {item.period}
               </span>
               
               {/* Job Title */}
-              <h4 className="text-lg font-light text-white mt-1 group-hover:text-[#28e98c] transition-colors duration-300">
+              <h4 className="text-lg font-light text-white mt-1 group-hover:text-accent transition-colors duration-300">
                 {item.title}
               </h4>
               
@@ -89,21 +89,21 @@ export default function Timeline() {
       {/* Education Column */}
       <div className="space-y-10">
         <h3 className="text-xl font-light tracking-wide text-white mb-6">
-          Education & <span className="text-[#28e98c]">Credentials</span>
+          Education & <span className="text-accent">Credentials</span>
         </h3>
         <div className="relative border-l border-zinc-800 pl-8 space-y-10 py-2">
           {educationData.map((item, index) => (
             <div key={index} className="group relative">
               {/* Timeline Bullet */}
-              <div className="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-700 group-hover:bg-[#28e98c] group-hover:border-[#28e98c] transition-all duration-300" />
+              <div className="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-zinc-800 border-2 border-zinc-700 group-hover:bg-accent group-hover:border-accent transition-all duration-300" />
               
               {/* Year Badge */}
-              <span className="text-xs font-light text-zinc-500 group-hover:text-[#28e98c] transition-colors duration-300">
+              <span className="text-xs font-light text-zinc-500 group-hover:text-accent transition-colors duration-300">
                 {item.period}
               </span>
               
               {/* Degree Title */}
-              <h4 className="text-lg font-light text-white mt-1 group-hover:text-[#28e98c] transition-colors duration-300">
+              <h4 className="text-lg font-light text-white mt-1 group-hover:text-accent transition-colors duration-300">
                 {item.title}
               </h4>
               

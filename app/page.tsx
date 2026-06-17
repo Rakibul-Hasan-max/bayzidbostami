@@ -9,6 +9,8 @@ import Timeline from "@/components/Timeline";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import ContactForm from "@/components/ContactForm";
+import RoundSpin from "@/components/RoundSpin";
+import ThemeSettings from "@/components/ThemeSettings";
 import {
   Home,
   User,
@@ -38,6 +40,9 @@ const skills = [
 export default function HomePage() {
   return (
     <div className="relative min-h-screen">
+      {/* Settings Panel */}
+      <ThemeSettings />
+
       {/* Interactive Canvas Background */}
       <InteractiveBackground />
 
@@ -52,26 +57,31 @@ export default function HomePage() {
         {/* ==================== HOME / INTRO SECTION ==================== */}
         <section
           id="home"
-          className="min-h-screen flex flex-col justify-center py-20"
+          className="py-24 md:pt-44 relative"
         >
           <SectionBadge icon={Home} text="Introduce" />
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-tight">
             Say Hi from{" "}
-            <span className="text-[#28e98c] font-normal">Bayzid Bostami</span>,{" "}
+            <span className="text-accent font-normal">Bayzid Bostami</span>,{" "}
             <br className="hidden md:block" />
             Mechanical Engineer &{" "}
-            <span className="text-[#28e98c] font-normal">Educator</span>
+            <span className="text-accent font-normal">Educator</span>
           </h1>
 
           <p className="text-lg text-zinc-400 font-light mt-8 max-w-2xl leading-relaxed">
-            I simplify complex academic, admission & engineering concepts through my YouTube channel — Bostami Education. I love sharing my knowledge with others and helping them achieve their goals.
+            I simplify complex academic, admission & engineering concepts through my YouTube channel - Bostami Education. I love sharing my knowledge with others and helping them achieve their goals.
           </p>
+
+          {/* Round Spin Button */}
+          <div className="absolute right-0 md:right-10 bottom-10 hidden lg:block">
+            <RoundSpin />
+          </div>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-8 mt-16">
             <div className="bg-[#191919] border border-zinc-800 rounded-[20px] px-8 py-7 group hover:border-zinc-600 transition-all duration-300">
-              <h2 className="text-4xl md:text-5xl font-light text-[#28e98c]">
+              <h2 className="text-4xl md:text-5xl font-light text-accent">
                 1000+
               </h2>
               <p className="text-sm text-zinc-400 font-light mt-2">
@@ -79,7 +89,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="bg-[#191919] border border-zinc-800 rounded-[20px] px-8 py-7 group hover:border-zinc-600 transition-all duration-300">
-              <h2 className="text-4xl md:text-5xl font-light text-[#28e98c]">
+              <h2 className="text-4xl md:text-5xl font-light text-accent">
                 200+
               </h2>
               <p className="text-sm text-zinc-400 font-light mt-2">
@@ -97,7 +107,7 @@ export default function HomePage() {
             Every great lesson begins{" "}
             <br className="hidden md:block" />
             with an even{" "}
-            <span className="text-[#28e98c]">better story</span>
+            <span className="text-accent">better story</span>
           </h2>
 
           <p className="text-[16px] text-zinc-400 font-light mt-8 max-w-3xl leading-[1.85]">
@@ -125,10 +135,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Service Card 1 */}
             <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-[#28e98c]/10 transition-all duration-300">
-                <Video className="w-6 h-6 text-[#28e98c]" />
+              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
+                <Video className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-xl font-light text-white mb-3 group-hover:text-[#28e98c] transition-colors duration-300">
+              <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
                 YouTube Education
               </h3>
               <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
@@ -139,10 +149,10 @@ export default function HomePage() {
 
             {/* Service Card 2 */}
             <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-[#28e98c]/10 transition-all duration-300">
-                <Settings className="w-6 h-6 text-[#28e98c]" />
+              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
+                <Settings className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-xl font-light text-white mb-3 group-hover:text-[#28e98c] transition-colors duration-300">
+              <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
                 Mechanical Design
               </h3>
               <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
@@ -153,10 +163,10 @@ export default function HomePage() {
 
             {/* Service Card 3 */}
             <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-[#28e98c]/10 transition-all duration-300">
-                <BookOpen className="w-6 h-6 text-[#28e98c]" />
+              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
+                <BookOpen className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-xl font-light text-white mb-3 group-hover:text-[#28e98c] transition-colors duration-300">
+              <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
                 Online Courses
               </h3>
               <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
@@ -178,13 +188,13 @@ export default function HomePage() {
                   <span className="text-[15px] font-light text-white">
                     {skill.name}
                   </span>
-                  <span className="text-2xl font-light text-[#28e98c]">
+                  <span className="text-2xl font-light text-accent">
                     {skill.level}%
                   </span>
                 </div>
                 <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
                   <div
-                    className="h-full bg-[#28e98c] rounded-full skill-bar-fill"
+                    className="h-full bg-accent rounded-full skill-bar-fill"
                     style={
                       { "--skill-level": `${skill.level}%` } as React.CSSProperties
                     }
@@ -200,7 +210,7 @@ export default function HomePage() {
           <SectionBadge icon={Layers} text="Portfolio" />
 
           <h2 className="text-3xl md:text-5xl font-light text-white mb-12 tracking-tight">
-            Featured <span className="text-[#28e98c]">Projects</span>
+            Featured <span className="text-accent">Projects</span>
           </h2>
 
           <PortfolioGrid />
@@ -217,7 +227,7 @@ export default function HomePage() {
           <SectionBadge icon={DollarSign} text="Pricing" />
 
           <h2 className="text-3xl md:text-5xl font-light text-white mb-12 tracking-tight">
-            My <span className="text-[#28e98c]">Pricing</span>
+            My <span className="text-accent">Pricing</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -247,24 +257,24 @@ export default function HomePage() {
                     key={i}
                     className="flex items-start gap-3 text-[14px] text-zinc-400 font-light"
                   >
-                    <Check className="w-4 h-4 text-[#28e98c] mt-0.5 shrink-0" />
+                    <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
               <a
                 href="#contact"
-                className="block text-center w-full py-3.5 rounded-full border border-zinc-700 text-[13px] uppercase tracking-widest font-light text-zinc-300 hover:border-[#28e98c] hover:text-[#28e98c] transition-all duration-300"
+                className="block text-center w-full py-3.5 rounded-full border border-zinc-700 text-[13px] uppercase tracking-widest font-light text-zinc-300 hover:border-accent hover:text-accent transition-all duration-300"
               >
                 Pick This Package
               </a>
             </div>
 
             {/* Premium Plan */}
-            <div className="pricing-premium border border-[#28e98c]/30 rounded-[20px] p-8 md:p-10 hover:border-[#28e98c] transition-all duration-500 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#28e98c]/5 rounded-full blur-3xl" />
+            <div className="pricing-premium border border-accent/30 rounded-[20px] p-8 md:p-10 hover:border-accent transition-all duration-500 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl" />
               <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#28e98c] font-light border border-[#28e98c]/40 rounded-full px-4 py-1.5 mb-6">
+                <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-light border border-accent/40 rounded-full px-4 py-1.5 mb-6">
                   <Sparkles className="w-3 h-3" /> Premium
                 </div>
                 <p className="text-[14px] text-zinc-400 font-light mb-6">
@@ -290,14 +300,14 @@ export default function HomePage() {
                       key={i}
                       className="flex items-start gap-3 text-[14px] text-zinc-400 font-light"
                     >
-                      <Check className="w-4 h-4 text-[#28e98c] mt-0.5 shrink-0" />
+                      <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <a
                   href="#contact"
-                  className="block text-center w-full py-3.5 rounded-full bg-[#28e98c] text-black text-[13px] uppercase tracking-widest font-medium border border-[#28e98c] hover:bg-transparent hover:text-[#28e98c] transition-all duration-300"
+                  className="block text-center w-full py-3.5 rounded-full bg-accent text-black text-[13px] uppercase tracking-widest font-medium border border-accent hover:bg-transparent hover:text-accent transition-all duration-300"
                 >
                   Pick This Package
                 </a>
@@ -309,7 +319,7 @@ export default function HomePage() {
             Don&apos;t find a package that matches your needs?{" "}
             <a
               href="#contact"
-              className="text-[#28e98c] hover:underline underline-offset-4"
+              className="text-accent hover:underline underline-offset-4"
             >
               Contact me
             </a>{" "}
@@ -322,7 +332,7 @@ export default function HomePage() {
           <SectionBadge icon={Mail} text="Contact" />
 
           <h2 className="text-3xl md:text-5xl font-light text-white mb-4 tracking-tight">
-            Let&apos;s Work <span className="text-[#28e98c]">Together!</span>
+            Let&apos;s Work <span className="text-accent">Together!</span>
           </h2>
           <p className="text-[14px] text-zinc-500 font-light mb-12">
             * Marked fields are required to fill.

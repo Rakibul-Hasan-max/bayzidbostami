@@ -88,7 +88,7 @@ export default function RightNavbar() {
             >
               <Icon
                 className={`w-4 h-4 transition-colors duration-300 ${
-                  isActive ? "text-[#28e98c]" : "text-zinc-500 group-hover:text-zinc-300"
+                  isActive ? "text-accent" : "text-zinc-500 group-hover:text-zinc-300"
                 }`}
               />
 
@@ -115,7 +115,7 @@ export default function RightNavbar() {
             >
               <Icon
                 className={`w-[17px] h-[17px] transition-colors duration-300 ${
-                  isActive ? "text-[#28e98c]" : "text-zinc-500"
+                  isActive ? "text-accent" : "text-zinc-500"
                 }`}
               />
             </button>

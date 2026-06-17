@@ -64,7 +64,7 @@ export default function TestimonialSlider() {
     <div className="relative bg-[#191919] border border-zinc-800 rounded-[20px] p-8 md:p-12">
       {/* Quote Icon */}
       <div className="mb-8">
-        <Quote className="w-10 h-10 text-[#28e98c] opacity-40" />
+        <Quote className="w-10 h-10 text-accent opacity-40" />
       </div>
 
       {/* Quote Text */}
@@ -90,14 +90,14 @@ export default function TestimonialSlider() {
         <div className="flex items-center gap-3">
           <button
             onClick={goPrev}
-            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-500 hover:border-[#28e98c] hover:text-[#28e98c] transition-all duration-300"
+            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-500 hover:border-accent hover:text-accent transition-all duration-300"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
           <button
             onClick={goNext}
-            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-500 hover:border-[#28e98c] hover:text-[#28e98c] transition-all duration-300"
+            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-500 hover:border-accent hover:text-accent transition-all duration-300"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-4 h-4" />
@@ -113,7 +113,7 @@ export default function TestimonialSlider() {
             onClick={() => goTo(index)}
             className={`h-1 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? "w-8 bg-[#28e98c]"
+                ? "w-8 bg-accent"
                 : "w-4 bg-zinc-700 hover:bg-zinc-600"
             }`}
             aria-label={`Go to testimonial ${index + 1}`}

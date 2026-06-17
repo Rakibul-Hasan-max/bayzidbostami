@@ -30,22 +30,22 @@ export default function ContactForm() {
       {/* Contact Info Cards */}
       <div className="space-y-4">
         <div className="bg-[#191919] border border-zinc-800 rounded-[16px] p-6 group hover:border-zinc-600 transition-all duration-300">
-          <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-[#28e98c]/10 transition-all duration-300">
-            <Phone className="w-5 h-5 text-[#28e98c]" />
+          <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-accent/10 transition-all duration-300">
+            <Phone className="w-5 h-5 text-accent" />
           </div>
           <p className="text-xs uppercase tracking-widest text-zinc-500 font-light mb-1">Phone</p>
           <p className="text-[15px] text-white font-light">+880 151871 7097</p>
         </div>
         <div className="bg-[#191919] border border-zinc-800 rounded-[16px] p-6 group hover:border-zinc-600 transition-all duration-300">
-          <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-[#28e98c]/10 transition-all duration-300">
-            <Mail className="w-5 h-5 text-[#28e98c]" />
+          <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-accent/10 transition-all duration-300">
+            <Mail className="w-5 h-5 text-accent" />
           </div>
           <p className="text-xs uppercase tracking-widest text-zinc-500 font-light mb-1">Email</p>
           <p className="text-[15px] text-white font-light">info@bayzidbostami.com</p>
         </div>
         <div className="bg-[#191919] border border-zinc-800 rounded-[16px] p-6 group hover:border-zinc-600 transition-all duration-300">
-          <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-[#28e98c]/10 transition-all duration-300">
-            <MapPin className="w-5 h-5 text-[#28e98c]" />
+          <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-accent/10 transition-all duration-300">
+            <MapPin className="w-5 h-5 text-accent" />
           </div>
           <p className="text-xs uppercase tracking-widest text-zinc-500 font-light mb-1">Location</p>
           <p className="text-[15px] text-white font-light">Dhaka, Bangladesh</p>
@@ -63,7 +63,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Your Name *"
               required
-              className="w-full bg-[#191919] border border-zinc-800 rounded-[12px] px-5 py-4 text-[14px] text-white placeholder:text-zinc-600 font-light outline-none focus:border-[#28e98c] transition-colors duration-300"
+              className="w-full bg-[#191919] border border-zinc-800 rounded-[12px] px-5 py-4 text-[14px] text-white placeholder:text-zinc-600 font-light outline-none focus:border-accent transition-colors duration-300"
             />
           </div>
           <div>
@@ -74,7 +74,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Your Email *"
               required
-              className="w-full bg-[#191919] border border-zinc-800 rounded-[12px] px-5 py-4 text-[14px] text-white placeholder:text-zinc-600 font-light outline-none focus:border-[#28e98c] transition-colors duration-300"
+              className="w-full bg-[#191919] border border-zinc-800 rounded-[12px] px-5 py-4 text-[14px] text-white placeholder:text-zinc-600 font-light outline-none focus:border-accent transition-colors duration-300"
             />
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="Subject *"
           required
-          className="w-full bg-[#191919] border border-zinc-800 rounded-[12px] px-5 py-4 text-[14px] text-white placeholder:text-zinc-600 font-light outline-none focus:border-[#28e98c] transition-colors duration-300"
+          className="w-full bg-[#191919] border border-zinc-800 rounded-[12px] px-5 py-4 text-[14px] text-white placeholder:text-zinc-600 font-light outline-none focus:border-accent transition-colors duration-300"
         />
         <textarea
           name="message"
@@ -94,11 +94,11 @@ export default function ContactForm() {
           placeholder="Your Message *"
           required
           rows={6}
-          className="w-full bg-[#191919] border border-zinc-800 rounded-[12px] px-5 py-4 text-[14px] text-white placeholder:text-zinc-600 font-light outline-none focus:border-[#28e98c] transition-colors duration-300 resize-none"
+          className="w-full bg-[#191919] border border-zinc-800 rounded-[12px] px-5 py-4 text-[14px] text-white placeholder:text-zinc-600 font-light outline-none focus:border-accent transition-colors duration-300 resize-none"
         />
         <button
           type="submit"
-          className="inline-flex items-center gap-2 bg-[#28e98c] text-black rounded-full px-8 py-3.5 font-medium text-[13px] tracking-widest uppercase border border-[#28e98c] hover:bg-transparent hover:text-[#28e98c] transition-all duration-300"
+          className="inline-flex items-center gap-2 bg-accent text-black rounded-full px-8 py-3.5 font-medium text-[13px] tracking-widest uppercase border border-accent hover:bg-transparent hover:text-accent transition-all duration-300"
         >
           <Send className="w-4 h-4" />
           Send Message

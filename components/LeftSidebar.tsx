@@ -70,12 +70,12 @@ export default function LeftSidebar() {
       <div className="w-full space-y-3 mb-3 lg:mb-6">
         <div className="text-left space-y-1">
           <p className="text-xs text-zinc-500 uppercase tracking-widest font-light">Email</p>
-          <p className="text-[15px] text-white font-light flex items-center gap-1"> <Mail className="w-4 h-4 text-[#28e98c]" /> info@bayzidbostami.com</p>
+          <p className="text-[15px] text-white font-light flex items-center gap-1"> <Mail className="w-4 h-4 text-accent" /> info@bayzidbostami.com</p>
         </div>
         <div className="text-left space-y-1">
           <p className="text-xs text-zinc-500 uppercase tracking-widest font-light">Base in</p>
           <p className="text-[15px] text-white font-light flex items-center gap-1">
-            <MapPin className="w-4 h-4 text-[#28e98c]" /> Dhaka, Bangladesh
+            <MapPin className="w-4 h-4 text-accent" /> Dhaka, Bangladesh
           </p>
         </div>
       </div>
@@ -92,7 +92,7 @@ export default function LeftSidebar() {
           href="https://youtube.com/@bostamieducation"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#28e98c] hover:border-[#28e98c] transition-all duration-300"
+          className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-accent hover:border-accent transition-all duration-300"
           aria-label="YouTube"
         >
           <YoutubeIcon />
@@ -101,7 +101,7 @@ export default function LeftSidebar() {
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#28e98c] hover:border-[#28e98c] transition-all duration-300"
+          className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-accent hover:border-accent transition-all duration-300"
           aria-label="LinkedIn"
         >
           <LinkedInIcon />
@@ -110,7 +110,7 @@ export default function LeftSidebar() {
           href="https://github.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#28e98c] hover:border-[#28e98c] transition-all duration-300"
+          className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-accent hover:border-accent transition-all duration-300"
           aria-label="GitHub"
         >
           <GithubIcon />
@@ -119,7 +119,7 @@ export default function LeftSidebar() {
           href="https://facebook.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#28e98c] hover:border-[#28e98c] transition-all duration-300"
+          className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-accent hover:border-accent transition-all duration-300"
           aria-label="Facebook"
         >
           <FacebookIcon />
@@ -130,7 +130,7 @@ export default function LeftSidebar() {
       <a
         href="#contact"
         onClick={handleHireMeClick}
-        className="w-full py-3.5 bg-[#28e98c] text-black rounded-full font-medium text-[13px] tracking-widest uppercase border border-[#28e98c] hover:bg-transparent hover:text-[#28e98c] transition-all duration-300 flex justify-center items-center gap-2"
+        className="w-full py-3.5 bg-accent text-black rounded-full font-medium text-[13px] tracking-widest uppercase border border-accent hover:bg-transparent hover:text-accent transition-all duration-300 flex justify-center items-center gap-2"
       >
         <Mail className="w-4 h-4" /> Let&apos;s Talk!
       </a>
