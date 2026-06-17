@@ -19,7 +19,26 @@ export default function ThemeSettings() {
 
   const changeColor = (color: string) => {
     document.documentElement.style.setProperty("--accent", color);
+    localStorage.setItem("theme-accent", color);
   };
+
+  const changeBgColor = (color: string) => {
+    document.documentElement.style.setProperty("--background", color);
+    localStorage.setItem("theme-background", color);
+  };
+
+  // Load saved theme on initial load
+  useEffect(() => {
+    const savedAccent = localStorage.getItem("theme-accent");
+    if (savedAccent) {
+      document.documentElement.style.setProperty("--accent", savedAccent);
+    }
+
+    const savedBg = localStorage.getItem("theme-background");
+    if (savedBg) {
+      document.documentElement.style.setProperty("--background", savedBg);
+    }
+  }, []);
 
   // Close when pressing Escape key
   useEffect(() => {
@@ -67,7 +86,7 @@ export default function ThemeSettings() {
           </button>
         </div>
 
-        <div>
+        <div className="mb-10">
           <p className="text-xs text-zinc-500 font-medium mb-6 tracking-widest uppercase">
             Colors
           </p>
@@ -81,6 +100,26 @@ export default function ThemeSettings() {
                 title={c.name}
               />
             ))}
+          </div>
+        </div>
+
+        <div>
+          <p className="text-xs text-zinc-500 font-medium mb-6 tracking-widest uppercase">
+            Background Colors
+          </p>
+          <div className="flex flex-col gap-3">
+            <button
+              onClick={() => changeBgColor("#000000")}
+              className="w-full text-left px-4 py-3 rounded-xl bg-black border border-zinc-800 text-sm text-zinc-400 hover:text-white hover:border-zinc-600 transition-all"
+            >
+              Pure Black
+            </button>
+            <button
+              onClick={() => changeBgColor("#1f1f1f")}
+              className="w-full text-left px-4 py-3 rounded-xl bg-[#1f1f1f] border border-zinc-700 text-sm text-zinc-400 hover:text-white hover:border-zinc-500 transition-all"
+            >
+              Dark Grey
+            </button>
           </div>
         </div>
       </div>

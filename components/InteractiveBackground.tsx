@@ -108,7 +108,6 @@ export default function InteractiveBackground() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-0"
-      style={{ background: "#1f1f1f" }}
     />
   );
 }
