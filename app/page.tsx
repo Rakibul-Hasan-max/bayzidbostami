@@ -11,6 +11,7 @@ import TestimonialSlider from "@/components/TestimonialSlider";
 import ContactForm from "@/components/ContactForm";
 import RoundSpin from "@/components/RoundSpin";
 import ThemeSettings from "@/components/ThemeSettings";
+import ScrollAnimation from "@/components/ScrollAnimation";
 import {
   Home,
   User,
@@ -59,242 +60,248 @@ export default function HomePage() {
           id="home"
           className="py-24 md:pt-44 relative"
         >
-          <SectionBadge icon={Home} text="Introduce" />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={Home} text="Introduce" />
+          </ScrollAnimation>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-tight">
-            Say Hi from{" "}
-            <span className="text-accent font-normal">Bayzid Bostami</span>,{" "}
-            <br className="hidden md:block" />
-            Mechanical Engineer &{" "}
-            <span className="text-accent font-normal">Educator</span>
-          </h1>
+          <ScrollAnimation animation="fade_from_bottom" delay={0.25}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-tight">
+              Say Hi from{" "}
+              <span className="text-accent font-normal">Bayzid Bostami</span>,{" "}
+              <br className="hidden md:block" />
+              Mechanical Engineer &{" "}
+              <span className="text-accent font-normal">Educator</span>
+            </h1>
+          </ScrollAnimation>
 
-          <p className="text-lg text-zinc-400 font-light mt-8 max-w-2xl leading-relaxed">
-            I simplify complex academic, admission & engineering concepts through my YouTube channel - Bostami Education. I love sharing my knowledge with others and helping them achieve their goals.
-          </p>
+          <ScrollAnimation animation="fade_from_bottom" delay={0.35}>
+            <p className="text-lg text-zinc-400 font-light mt-8 max-w-2xl leading-relaxed">
+              I simplify complex academic, admission & engineering concepts through my YouTube channel - Bostami Education. I love sharing my knowledge with others and helping them achieve their goals.
+            </p>
+          </ScrollAnimation>
 
           {/* Round Spin Button */}
           <div className="absolute right-0 md:right-10 bottom-10 hidden lg:block">
-            <RoundSpin />
+            <ScrollAnimation animation="rotate_up" delay={0.45}>
+              <RoundSpin />
+            </ScrollAnimation>
           </div>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-8 mt-16">
-            <div className="bg-[#191919] border border-zinc-800 rounded-[20px] px-8 py-7 group hover:border-zinc-600 transition-all duration-300">
-              <h2 className="text-4xl md:text-5xl font-light text-accent">
-                1000+
-              </h2>
-              <p className="text-sm text-zinc-400 font-light mt-2">
-                YouTube Subscribers
-              </p>
-            </div>
-            <div className="bg-[#191919] border border-zinc-800 rounded-[20px] px-8 py-7 group hover:border-zinc-600 transition-all duration-300">
-              <h2 className="text-4xl md:text-5xl font-light text-accent">
-                200+
-              </h2>
-              <p className="text-sm text-zinc-400 font-light mt-2">
-                Educational Videos Published
-              </p>
-            </div>
+            <ScrollAnimation animation="fade_from_bottom" delay={0.4} className="flex flex-wrap gap-8 w-full">
+              <div className="bg-[#191919] border border-zinc-800 rounded-[20px] px-8 py-7 group hover:border-zinc-600 transition-all duration-300">
+                <h2 className="text-4xl md:text-5xl font-light text-accent">
+                  1000+
+                </h2>
+                <p className="text-sm text-zinc-400 font-light mt-2">
+                  YouTube Subscribers
+                </p>
+              </div>
+              <div className="bg-[#191919] border border-zinc-800 rounded-[20px] px-8 py-7 group hover:border-zinc-600 transition-all duration-300">
+                <h2 className="text-4xl md:text-5xl font-light text-accent">
+                  200+
+                </h2>
+                <p className="text-sm text-zinc-400 font-light mt-2">
+                  Educational Videos Published
+                </p>
+              </div>
+            </ScrollAnimation>
           </div>
         </section>
 
         {/* ==================== ABOUT SECTION ==================== */}
         <section id="about" className="py-24">
-          <SectionBadge icon={User} text="About" />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={User} text="About" />
+          </ScrollAnimation>
 
-          <h2 className="text-3xl md:text-5xl font-light text-white leading-snug tracking-tight">
-            Every great lesson begins{" "}
-            <br className="hidden md:block" />
-            with an even{" "}
-            <span className="text-accent">better story</span>
-          </h2>
+          <ScrollAnimation animation="fade_from_bottom" delay={0.25}>
+            <h2 className="text-3xl md:text-5xl font-light text-white leading-snug tracking-tight mt-6">
+              Every great lesson begins{" "}
+              <br className="hidden md:block" />
+              with an even{" "}
+              <span className="text-accent">better story</span>
+            </h2>
+          </ScrollAnimation>
 
-          <p className="text-[16px] text-zinc-400 font-light mt-8 max-w-3xl leading-[1.85]">
-            Since beginning my career as a Educator, I&apos;ve dedicated
-            myself to making education accessible and engaging.
-            Through Bostami Education, my YouTube platform, I break down
-            complex topics of Science, Academic, Admission and Engineering concepts in easy-to-understand visual lessons. With over 1000 YouTube subscribers and a rapidly growing community, my mission is to empower
-            students across Bangladesh and beyond to master the subjects
-            with confidence. I&apos;m quietly confident, naturally curious, and
-            perpetually working on creating better educational content, one
-            video at a time.
-          </p>
+          <ScrollAnimation animation="fade_from_bottom" delay={0.35}>
+            <p className="text-[16px] text-zinc-400 font-light mt-8 max-w-3xl leading-[1.85]">
+              Since beginning my career as a Educator, I&apos;ve dedicated
+              myself to making education accessible and engaging.
+              Through Bostami Education, my YouTube platform, I break down
+              complex topics of Science, Academic, Admission and Engineering concepts in easy-to-understand visual lessons. With over 1000 YouTube subscribers and a rapidly growing community, my mission is to empower
+              students across Bangladesh and beyond to master the subjects
+              with confidence. I&apos;m quietly confident, naturally curious, and
+              perpetually working on creating better educational content, one
+              video at a time.
+            </p>
+          </ScrollAnimation>
         </section>
 
         {/* ==================== RESUME SECTION ==================== */}
         <section id="resume" className="py-24">
-          <SectionBadge icon={FileText} text="Resume" />
-          <Timeline />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={FileText} text="Resume" />
+          </ScrollAnimation>
+          
+          <ScrollAnimation animation="fade_from_bottom" delay={0.3}>
+            <Timeline />
+          </ScrollAnimation>
         </section>
 
         {/* ==================== SERVICES SECTION ==================== */}
         <section id="services" className="py-24">
-          <SectionBadge icon={Briefcase} text="Specializations" />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={Briefcase} text="Specializations" />
+          </ScrollAnimation>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {/* Service Card 1 */}
-            <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
-                <Video className="w-6 h-6 text-accent" />
+            <ScrollAnimation animation="fade_from_bottom" delay={0.2}>
+              <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
+                  <Video className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
+                  YouTube Education
+                </h3>
+                <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
+                  Creating high-quality educational content on Mechanical Engineering
+                  topics — from Thermodynamics to CAD Modeling, all in Bangla.
+                </p>
               </div>
-              <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
-                YouTube Education
-              </h3>
-              <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
-                Creating high-quality educational content on Mechanical Engineering
-                topics — from Thermodynamics to CAD Modeling, all in Bangla.
-              </p>
-            </div>
+            </ScrollAnimation>
 
             {/* Service Card 2 */}
-            <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
-                <Settings className="w-6 h-6 text-accent" />
+            <ScrollAnimation animation="fade_from_bottom" delay={0.3}>
+              <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
+                  <Settings className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
+                  Mechanical Design
+                </h3>
+                <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
+                  Professional CAD modeling, FEA simulation, and product design
+                  using SolidWorks, AutoCAD, and Fusion 360.
+                </p>
               </div>
-              <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
-                Mechanical Design
-              </h3>
-              <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
-                Professional CAD modeling, FEA simulation, and product design
-                using SolidWorks, AutoCAD, and Fusion 360.
-              </p>
-            </div>
+            </ScrollAnimation>
 
             {/* Service Card 3 */}
-            <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
-                <BookOpen className="w-6 h-6 text-accent" />
+            <ScrollAnimation animation="fade_from_bottom" delay={0.4}>
+              <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 group hover:border-zinc-600 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-all duration-300">
+                  <BookOpen className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
+                  Online Courses
+                </h3>
+                <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
+                  Comprehensive structured courses on Bostami Education platform
+                  covering core ME subjects with assignments and quizzes.
+                </p>
               </div>
-              <h3 className="text-xl font-light text-white mb-3 group-hover:text-accent transition-colors duration-300">
-                Online Courses
-              </h3>
-              <p className="text-[14px] text-zinc-500 font-light leading-relaxed">
-                Comprehensive structured courses on Bostami Education platform
-                covering core ME subjects with assignments and quizzes.
-              </p>
-            </div>
+            </ScrollAnimation>
           </div>
         </section>
 
         {/* ==================== SKILLS SECTION ==================== */}
         <section id="skills" className="py-24">
-          <SectionBadge icon={Cpu} text="My Skills" />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={Cpu} text="My Skills" />
+          </ScrollAnimation>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
             {skills.map((skill, index) => (
-              <div key={index} className="group">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-[15px] font-light text-white">
-                    {skill.name}
-                  </span>
-                  <span className="text-2xl font-light text-accent">
-                    {skill.level}%
-                  </span>
+              <ScrollAnimation key={index} animation="fade_from_bottom" delay={0.1 * index}>
+                <div className="group">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-[15px] font-light text-white">
+                      {skill.name}
+                    </span>
+                    <span className="text-2xl font-light text-accent">
+                      {skill.level}%
+                    </span>
+                  </div>
+                  <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-accent rounded-full skill-bar-fill"
+                      style={
+                        { "--skill-level": `${skill.level}%` } as React.CSSProperties
+                      }
+                    />
+                  </div>
                 </div>
-                <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-accent rounded-full skill-bar-fill"
-                    style={
-                      { "--skill-level": `${skill.level}%` } as React.CSSProperties
-                    }
-                  />
-                </div>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
         </section>
 
         {/* ==================== PORTFOLIO SECTION ==================== */}
         <section id="portfolio" className="py-24">
-          <SectionBadge icon={Layers} text="Portfolio" />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={Layers} text="Portfolio" />
+          </ScrollAnimation>
 
-          <h2 className="text-3xl md:text-5xl font-light text-white mb-12 tracking-tight">
-            Featured <span className="text-accent">Projects</span>
-          </h2>
+          <ScrollAnimation animation="fade_from_bottom" delay={0.25}>
+            <h2 className="text-3xl md:text-5xl font-light text-white mb-12 tracking-tight mt-6">
+              Featured <span className="text-accent">Projects</span>
+            </h2>
+          </ScrollAnimation>
 
-          <PortfolioGrid />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.35}>
+            <PortfolioGrid />
+          </ScrollAnimation>
         </section>
 
         {/* ==================== TESTIMONIAL SECTION ==================== */}
         <section id="testimonial" className="py-24">
-          <SectionBadge icon={MessageSquare} text="Testimonials" />
-          <TestimonialSlider />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={MessageSquare} text="Testimonials" />
+          </ScrollAnimation>
+          
+          <ScrollAnimation animation="fade_from_bottom" delay={0.3}>
+            <TestimonialSlider />
+          </ScrollAnimation>
         </section>
 
         {/* ==================== PRICING SECTION ==================== */}
         <section id="pricing" className="py-24">
-          <SectionBadge icon={DollarSign} text="Pricing" />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={DollarSign} text="Pricing" />
+          </ScrollAnimation>
 
-          <h2 className="text-3xl md:text-5xl font-light text-white mb-12 tracking-tight">
-            My <span className="text-accent">Pricing</span>
-          </h2>
+          <ScrollAnimation animation="fade_from_bottom" delay={0.25}>
+            <h2 className="text-3xl md:text-5xl font-light text-white mb-12 tracking-tight mt-6">
+              My <span className="text-accent">Pricing</span>
+            </h2>
+          </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Basic Plan */}
-            <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 md:p-10 hover:border-zinc-600 transition-all duration-500">
-              <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-zinc-500 font-light border border-zinc-800 rounded-full px-4 py-1.5 mb-6">
-                <Sparkles className="w-3 h-3" /> Basic
-              </div>
-              <p className="text-[14px] text-zinc-400 font-light mb-6">
-                For students who need focused guidance on specific topics
-              </p>
-              <h3 className="text-4xl md:text-5xl font-light text-white mb-8">
-                ৳999{" "}
-                <span className="text-sm text-zinc-500 font-light">
-                  / course
-                </span>
-              </h3>
-              <ul className="space-y-3 mb-10">
-                {[
-                  "Access to recorded video lectures",
-                  "Topic-specific course materials",
-                  "Community discussion access",
-                  "Certificate on completion",
-                  "6 months course access",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-[14px] text-zinc-400 font-light"
-                  >
-                    <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#contact"
-                className="block text-center w-full py-3.5 rounded-full border border-zinc-700 text-[13px] uppercase tracking-widest font-light text-zinc-300 hover:border-accent hover:text-accent transition-all duration-300"
-              >
-                Pick This Package
-              </a>
-            </div>
-
-            {/* Premium Plan */}
-            <div className="pricing-premium border border-accent/30 rounded-[20px] p-8 md:p-10 hover:border-accent transition-all duration-500 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl" />
-              <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-light border border-accent/40 rounded-full px-4 py-1.5 mb-6">
-                  <Sparkles className="w-3 h-3" /> Premium
+            <ScrollAnimation animation="fade_from_left" delay={0.2}>
+              <div className="bg-[#191919] border border-zinc-800 rounded-[20px] p-8 md:p-10 hover:border-zinc-600 transition-all duration-500">
+                <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-zinc-500 font-light border border-zinc-800 rounded-full px-4 py-1.5 mb-6">
+                  <Sparkles className="w-3 h-3" /> Basic
                 </div>
                 <p className="text-[14px] text-zinc-400 font-light mb-6">
-                  Full mentorship with live sessions and personal guidance
+                  For students who need focused guidance on specific topics
                 </p>
                 <h3 className="text-4xl md:text-5xl font-light text-white mb-8">
-                  ৳4,999{" "}
+                  ৳999{" "}
                   <span className="text-sm text-zinc-500 font-light">
-                    / semester
+                    / course
                   </span>
                 </h3>
                 <ul className="space-y-3 mb-10">
                   {[
-                    "Everything in Basic plan",
-                    "Live interactive sessions every week",
-                    "1-on-1 doubt solving with Bayzid",
-                    "Priority project feedback",
-                    "Full course catalog access",
-                    "Lifetime access to content",
-                    "Exclusive engineering resources",
+                    "Access to recorded video lectures",
+                    "Topic-specific course materials",
+                    "Community discussion access",
+                    "Certificate on completion",
+                    "6 months course access",
                   ].map((item, i) => (
                     <li
                       key={i}
@@ -307,12 +314,58 @@ export default function HomePage() {
                 </ul>
                 <a
                   href="#contact"
-                  className="block text-center w-full py-3.5 rounded-full bg-accent text-black text-[13px] uppercase tracking-widest font-medium border border-accent hover:bg-transparent hover:text-accent transition-all duration-300"
+                  className="block text-center w-full py-3.5 rounded-full border border-zinc-700 text-[13px] uppercase tracking-widest font-light text-zinc-300 hover:border-accent hover:text-accent transition-all duration-300"
                 >
                   Pick This Package
                 </a>
               </div>
-            </div>
+            </ScrollAnimation>
+
+            {/* Premium Plan */}
+            <ScrollAnimation animation="fade_from_right" delay={0.3}>
+              <div className="pricing-premium border border-accent/30 rounded-[20px] p-8 md:p-10 hover:border-accent transition-all duration-500 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl" />
+                <div className="relative z-10">
+                  <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-light border border-accent/40 rounded-full px-4 py-1.5 mb-6">
+                    <Sparkles className="w-3 h-3" /> Premium
+                  </div>
+                  <p className="text-[14px] text-zinc-400 font-light mb-6">
+                    Full mentorship with live sessions and personal guidance
+                  </p>
+                  <h3 className="text-4xl md:text-5xl font-light text-white mb-8">
+                    ৳4,999{" "}
+                    <span className="text-sm text-zinc-500 font-light">
+                      / semester
+                    </span>
+                  </h3>
+                  <ul className="space-y-3 mb-10">
+                    {[
+                      "Everything in Basic plan",
+                      "Live interactive sessions every week",
+                      "1-on-1 doubt solving with Bayzid",
+                      "Priority project feedback",
+                      "Full course catalog access",
+                      "Lifetime access to content",
+                      "Exclusive engineering resources",
+                    ].map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 text-[14px] text-zinc-400 font-light"
+                      >
+                        <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href="#contact"
+                    className="block text-center w-full py-3.5 rounded-full bg-accent text-black text-[13px] uppercase tracking-widest font-medium border border-accent hover:bg-transparent hover:text-accent transition-all duration-300"
+                  >
+                    Pick This Package
+                  </a>
+                </div>
+              </div>
+            </ScrollAnimation>
           </div>
 
           <p className="text-sm text-zinc-500 font-light mt-8 text-center">
@@ -329,16 +382,25 @@ export default function HomePage() {
 
         {/* ==================== CONTACT SECTION ==================== */}
         <section id="contact" className="py-24 pb-32">
-          <SectionBadge icon={Mail} text="Contact" />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.15}>
+            <SectionBadge icon={Mail} text="Contact" />
+          </ScrollAnimation>
 
-          <h2 className="text-3xl md:text-5xl font-light text-white mb-4 tracking-tight">
-            Let&apos;s Work <span className="text-accent">Together!</span>
-          </h2>
-          <p className="text-[14px] text-zinc-500 font-light mb-12">
-            * Marked fields are required to fill.
-          </p>
+          <ScrollAnimation animation="fade_from_bottom" delay={0.25}>
+            <h2 className="text-3xl md:text-5xl font-light text-white mb-4 tracking-tight mt-6">
+              Let&apos;s Work <span className="text-accent">Together!</span>
+            </h2>
+          </ScrollAnimation>
+          
+          <ScrollAnimation animation="fade_from_bottom" delay={0.35}>
+            <p className="text-[14px] text-zinc-500 font-light mb-12">
+              * Marked fields are required to fill.
+            </p>
+          </ScrollAnimation>
 
-          <ContactForm />
+          <ScrollAnimation animation="fade_from_bottom" delay={0.45}>
+            <ContactForm />
+          </ScrollAnimation>
         </section>
       </main>
     </div>
