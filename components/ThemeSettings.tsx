@@ -52,7 +52,7 @@ export default function ThemeSettings() {
   return (
     <>
       {/* Floating Toggle Button */}
-      <div className="fixed top-4 right-4 lg:top-8 lg:left-8 lg:right-auto z-40">
+      <div className="fixed top-4 left-4 lg:top-8 lg:left-8 z-40">
         <button
           onClick={() => setIsOpen(true)}
           className="w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-[#191919] border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-accent hover:border-accent transition-all duration-300 group shadow-lg"

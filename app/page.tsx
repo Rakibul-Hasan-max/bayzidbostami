@@ -40,7 +40,7 @@ const skills = [
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
       {/* Settings Panel */}
       <ThemeSettings />
 
@@ -54,7 +54,7 @@ export default function HomePage() {
       <RightNavbar />
 
       {/* Main Content */}
-      <main className="relative z-10 lg:ml-[420px] lg:mr-[90px] px-6 py-8 lg:py-8">
+      <main className="relative z-10 lg:ml-[420px] lg:mr-[90px] px-6 py-8 lg:py-8 overflow-hidden">
         {/* ==================== HOME / INTRO SECTION ==================== */}
         <section
           id="home"
