@@ -9,6 +9,7 @@ interface Project {
   link: string;
   category: string;
   embedUrl?: string;
+  image?: string;
 }
 
 const projects: Project[] = [
@@ -36,14 +37,16 @@ const projects: Project[] = [
   {
     title: "Bostami Education Platform",
     tags: ["Web App", "EdTech"],
-    link: "#",
+    link: "https://www.bostamieducation.com/",
     category: "platform",
+    image: "/edtech.png",
   },
   {
     title: "Heat Sink Thermal Analysis",
     tags: ["Research", "FEA"],
-    link: "#",
+    link: "https://radianheatsinks.com/thermal-analysis-of-heat-sink/",
     category: "engineering",
+    image: "/heat.png",
   },
 ];
 
@@ -144,19 +147,31 @@ export default function PortfolioGrid() {
             <a
               key={index}
               href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative bg-[#191919] border border-zinc-800 rounded-[20px] overflow-hidden hover:border-zinc-600 transition-all duration-500"
             >
               {/* Image Area */}
               <div className="relative w-full aspect-[16/10] bg-zinc-900 overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#28e98c]/5 via-transparent to-[#28e98c]/10" />
-                <div className="text-center z-10 p-8">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-zinc-800/80 border border-zinc-700 flex items-center justify-center group-hover:border-accent/50 transition-all duration-300">
-                    <Layers className="w-7 h-7 text-accent" />
-                  </div>
-                  <p className="text-zinc-400 text-sm font-light">
-                    {project.tags.join(" • ")}
-                  </p>
-                </div>
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#28e98c]/5 via-transparent to-[#28e98c]/10" />
+                    <div className="text-center z-10 p-8">
+                      <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-zinc-800/80 border border-zinc-700 flex items-center justify-center group-hover:border-accent/50 transition-all duration-300">
+                        <Layers className="w-7 h-7 text-accent" />
+                      </div>
+                      <p className="text-zinc-400 text-sm font-light">
+                        {project.tags.join(" • ")}
+                      </p>
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* Info */}
